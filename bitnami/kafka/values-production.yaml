@@ -93,6 +93,9 @@ logRetentionCheckIntervalMs: 300000
 ## The minimum age of a log file to be eligible for deletion due to age.
 logRetentionHours: 168
 
+## Log message format version
+logMessageFormatVersion: ""
+
 ## The maximum size of a log segment file. When this size is reached a new log segment will be created.
 logSegmentBytes: _1073741824
 

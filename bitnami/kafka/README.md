@@ -68,6 +68,7 @@ The following tables lists the configurable parameters of the Kafka chart and th
 | `logRetentionBytes`              | A size-based retention policy for logs.                                                                    | `_1073741824`                                                      |
 | `logRetentionCheckIntervalMs`    | The interval at which log segments are checked to see if they can be deleted.                              | `300000`                                                           |
 | `logRetentionHours`              | The minimum age of a log file to be eligible for deletion due to age.                                      | `168`                                                              |
+| `logMessageFormatVersion`              | Logging message format version.                                      | ``                                                              |
 | `logSegmentBytes`                | The maximum size of a log segment file. When this size is reached a new log segment will be created.       | `_1073741824`                                                      |
 | `logsDirs`                       | A comma separated list of directories under which to store log files.                                      | `/opt/bitnami/kafka/data`                                          |
 | `maxMessageBytes`                       | The largest record batch size allowed by Kafka.                                      | `1000012`                                          |

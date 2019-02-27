@@ -151,6 +151,8 @@ spec:
           value: {{ .Values.logFlushIntervalMs | quote }}
         - name: KAFKA_LOG_RETENTION_BYTES
           value: {{ .Values.logRetentionBytes | replace "_" "" | quote }}
+        - name: KAFKA_LOG_MESSAGE_FORMAT_VERSION
+          value: {{ .Values.logMessageFormatVersion | replace "_" "" | quote }}
         - name: KAFKA_LOG_RETENTION_CHECK_INTERVALS_MS
           value: {{ .Values.logRetentionCheckIntervalMs | quote }}
         - name: KAFKA_LOG_RETENTION_HOURS
